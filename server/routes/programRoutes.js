@@ -9,13 +9,19 @@ const {
   deleteProgram,
 } = require("../controllers/programController");
 
+const { protect, adminOnly } = require("../middleware/authMiddleware");
 //groups the methods that share a URL
-router.route("/").get(getPrograms).post(createProgram);
+router
+  .route("/")
+  .get(getPrograms) //public
+  .post(protect, adminOnly, createProgram); //admins only
 
 router
   .route("/:id")
-  .get(getProgramById)
-  .put(updateProgram)
-  .delete(deleteProgram);
+  .get(getProgramById) //public
+  .put(protect, adminOnly, updateProgram) //admin only
+  .delete(protect, adminOnly, deleteProgram); //admin only
 
 module.exports = router;
+
+//Note: Browsing stays public so parents can see the programs before creating an account

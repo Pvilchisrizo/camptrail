@@ -16,7 +16,7 @@ const programSchema = new mongoose.Schema(
       required: true,
       enum: [
         "Technology",
-        "Leardership",
+        "Leadership",
         "Entrepreneurship",
         "Outdoors",
         "Other",
