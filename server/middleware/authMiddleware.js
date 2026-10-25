@@ -39,15 +39,3 @@ const adminOnly = (req, res, next) => {
 };
 
 module.exports = { protect, adminOnly };
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZGJlMTMwMzdhZTE2OGUwNjcxMjRjNCIsImlhdCI6MTc5MjgxMzMwMSwiZXhwIjoxNzkzNDE4MTAxfQ.e2xpMYPQJBdiqL70YM58ym2O7xHepd6q36pK9lFwQew
-//password123456
-
-//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZGMyYmUzM2MwNDI3NWRlZjMwYmRkYyIsImlhdCI6MTc5MjgxNDA1MSwiZXhwIjoxNzkzNDE4ODUxfQ.08STbuER-xCcjZpvH9bqOggcnu_W23_f7rGPHI5bktI
-
-// 400
-// {
-//   "message": "Program validation failed: topic: `Leadership` is not a valid enum value for path `topic`."
-// }
-
-//"_id": "6adc41793fb1054ec57a237f"
