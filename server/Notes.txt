@@ -1,0 +1,14 @@
+
+
+Why it fails silently: if the schema says firstname and you pass firstName, Mongoose sees an unknown field and drops it, no error. If the controller destructures firstname from a body containing firstName, the variable is just undefined.That’s a great “key learning” for your devlog: Mongoose ignores what it doesn’t recognize, so always test that validation actually rejects bad data.
+
+
+Parent sends { childId, programId }
+   │
+   ├─ 1. Is this child MINE?                  no → 404
+   ├─ 2. Does the program exist?              no → 404
+   ├─ 3. Is registration open (upcoming)?     no → 400
+   ├─ 4. Is the child the right age?          no → 400
+   ├─ 5. Already registered?                  yes → 400
+   │
+   └─ Spots left?  yes → confirmed ✅   no → waitlisted ⏳
