@@ -25,3 +25,16 @@ Max's parent (waitlisted) sees nothing
 
 Why only confirmed: a waitlisted child isn’t at camp, so those updates (and possibly photos of other kids) aren’t for that family. This is privacy built into the query, like the children step.
 
+
+client/
+├── index.html          ← the ONE html page of the whole app
+├── package.json
+├── vite.config.js      ← Vite settings (we won't need to touch it)
+└── src/
+    ├── main.jsx        ← the starting point: connects React to index.html
+    ├── App.jsx         ← your top-level component
+    ├── App.css
+    ├── index.css
+    └── assets/
+
+    
