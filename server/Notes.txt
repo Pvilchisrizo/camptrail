@@ -11,4 +11,17 @@ Parent sends { childId, programId }
    ├─ 4. Is the child the right age?          no → 400
    ├─ 5. Already registered?                  yes → 400
    │
-   └─ Spots left?  yes → confirmed ✅   no → waitlisted ⏳
+   └─ Spots left?  yes → confirmed ✅   no → waitlisted ⏳waitlisted child isn’t at camp, so those updates (and possibly photos of other kids) aren’t for that family.
+
+
+   Admin posts an update to a RUNNING program
+                ↓
+Parent asks "what's new?"
+   1. Find MY confirmed registrations → which programs?
+   2. Find updates for ONLY those programs
+                ↓
+Sofia's parent sees Tiny Test Camp updates
+Max's parent (waitlisted) sees nothing
+
+Why only confirmed: a waitlisted child isn’t at camp, so those updates (and possibly photos of other kids) aren’t for that family. This is privacy built into the query, like the children step.
+

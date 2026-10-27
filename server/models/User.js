@@ -41,16 +41,3 @@ userSchema.methods.matchPassword = async function (enteredPassword) {
   return bcrypt.compare(enteredPassword, this.password);
 };
 module.exports = mongoose.model("User", userSchema);
-
-// "_id": "6adc2be33c04275def30bddc",
-// "name": "Parent",
-// "email": "parent@test.com",
-// "role": "parent",
-// "token": eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZGMyYmUzM2MwNDI3NWRlZjMwYmRkYyIsImlhdCI6MTc5MjkxNDYwNSwiZXhwIjoxNzkzNTE5NDA1fQ.IPrLQnmLk2ystUbMF0G-fvYAvSiO1MDD5CTaJ2Xqvog
-
-// "_id": "6addac46e0780b95991e88a7",
-// "psrent2": "Other Parent",
-// "email": "other@test.com",
-// "role": "parent",
-// "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhZGRhYzQ2ZTA3ODBiOTU5OTFlODhhNyIsImlhdCI6MTc5MjkxNDY1MywiZXhwIjoxNzkzNTE5NDUzfQ.7KM6ZacU42soah9ezsFMOotyLFYRaDSKH8itGf3yfWw
-// }
